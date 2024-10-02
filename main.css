@@ -119,6 +119,7 @@ body {
     display:flex;
     align-items: center;
     margin:auto;
+    cursor: pointer;
 }
 .contact_icon{
     width:20px;
@@ -138,13 +139,6 @@ button>a{
 
 
 
- /* Button styling */
- button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
 /* Toast container */
 #toast {
     visibility: hidden; /* Hidden by default */
@@ -153,11 +147,11 @@ button>a{
     color: #fff; /* White text */
     text-align: center; /* Center text */
     border-radius: 35px; /* Rounded corners */
-    padding: 10px; /* Padding inside the toast */
+    padding: 8px; /* Padding inside the toast */
     position: fixed; /* Fixed position */
     z-index: 1; /* On top of other elements */
     left: 50%; /* Center horizontally */
-    bottom: 15px; /* Position at the bottom */
+    bottom: 10px; /* Position at the bottom */
     transform: translateX(-50%); /* Adjust position */
     font-size: 17px;
 }
