@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins';
+}
+
+body {
+    font-size: 25px; /* Default font size */
+}
+
+@media (max-width: 768px) { /* For tablets */
+    body {
+        font-size: 23px;
+    }
+    .mobile>:nth-child(2),.work>:nth-child(2){
+        font-size: 14px;
+        display:inline-block;
+    }
+    .content_detail{
+        align-items: center;
+        margin-left: 38px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 480px) { /* For small mobile devices */
+    body {
+        font-size: 20px;
+    }
+    .mobile>:nth-child(2),.work>:nth-child(2){
+        font-size: 14px;
+        display:inline-block;
+    }
+    .content_detail{
+        align-items: center;
+        margin-left: 38px;
+        font-weight: 300;
+    }
+}
+
+.header{
+    height:8vh;
+    background: #00585A;
+}
+
+.Name_container{
+    margin-left: 20px;
+}
+
+.logo{
+    width:120px;
+    margin: 10px;
+}
+
+.content{
+    margin-left: 10px!important;
+    margin-top:10px ;
+}
+
+.content1,.content2,.content3,.content4{
+    height:40px;
+    display:flex;
+    flex-direction: row;
+    /* align-items: center; */
+    margin-top: 28px;
+    margin-bottom:28px;
+}
+
+.content_detail{
+    align-items: center;
+    margin-left: 38px;
+    font-weight: 300;
+}
+.work,.mobile{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    /* align-content:space-around; */
+    /* margin-top:-10px; */
+    /* justify-content:center; */
+}
+
+.mobile>:nth-child(2),.work>:nth-child(2){
+    font-size: 14px;
+    display:inline-block;
+}
+
+.icon{
+    width: 60px;
+}
+
+.icon_container{
+    width:30px;
+    display:flex;
+    align-items: center;
+}
+
+.icon2{
+    width: 58px;
+}
+
+.icon1{
+    width: 55px;
+}
+
+.email,.website{
+    display:flex;
+    align-items: center;
+}
+
+.contact>button{
+    background-color: #00585A;
+    padding-top:18px;
+    padding-bottom: 18px;
+    padding-left:13px;
+    padding-right:13px;
+    border-style:none;
+    border-radius: 6px;
+    display:flex;
+    align-items: center;
+    margin:auto;
+}
+.contact_icon{
+    width:20px;
+    margin-right:10px;
+}
+
+button>a{
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+ /* Button styling */
+ button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Toast container */
+#toast {
+    visibility: hidden; /* Hidden by default */
+    min-width: 250px; /* Minimum width of the toast */
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center; /* Center text */
+    border-radius: 35px; /* Rounded corners */
+    padding: 16px; /* Padding inside the toast */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* On top of other elements */
+    left: 50%; /* Center horizontally */
+    bottom: 30px; /* Position at the bottom */
+    transform: translateX(-50%); /* Adjust position */
+    font-size: 17px;
+}
+
+/* Show the toast (animation) */
+#toast.show {
+    visibility: visible; /* Make visible */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s; /* Fade in/out */
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
