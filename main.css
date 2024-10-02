@@ -135,10 +135,6 @@ button>a{
 
 
 
-
-
-
-
 /* Toast container */
 #toast {
     visibility: hidden; /* Hidden by default */
@@ -153,7 +149,7 @@ button>a{
     left: 50%; /* Center horizontally */
     bottom: 10px; /* Position at the bottom */
     transform: translateX(-50%); /* Adjust position */
-    font-size: 17px;
+    font-size: 13px;
 }
 
 /* Show the toast (animation) */
